@@ -1,7 +1,7 @@
 {
   "name": "create-object",
   "description": "Portable Object.create that is not a shim and drops the verbose property descriptor syntax.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "bugs": {
     "url": "https://github.com/wilmoore/create-object.js/issues"
