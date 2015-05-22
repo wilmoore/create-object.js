@@ -58,6 +58,7 @@ point.valueOf()
 ## Reference
 
  - [Prototypal Inheritance in JavaScript](http://javascript.crockford.com/prototypal.html)
+ - [JS Objects: De”construct”ion](http://davidwalsh.name/javascript-objects-deconstruction)
  - [Object.create](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 
 ## Alternatives
