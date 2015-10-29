@@ -23,7 +23,25 @@ module.exports = create
  * New object with the specified prototype object.
  */
 
-function create (prototype) {
+function create (prototype, properties) {
   Ctor.prototype = prototype || {}
-  return new Ctor()
+  return properties ? copy(new Ctor(), properties) : new Ctor()
+}
+
+/**
+ * Copy properties from source to target.
+ *
+ * @param {Object} target
+ * Object to assign properties to.
+ *
+ * @param {Object} source
+ * Object to get properties from.
+ *
+ * @return {Object}
+ * New object.
+ */
+
+function copy (target, source) {
+  for (var key in Object(source)) target[key] = source[key]
+  return target
 }

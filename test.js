@@ -31,5 +31,8 @@ test('create()', function (t) {
   })
   t.deepEqual(actual.init(), 'attr', 'method call')
 
+  actual = create({ greeting: 'hello' }, { name: 'world' })
+  t.deepEqual(actual.name, 'world', 'properties')
+
   t.end()
 })

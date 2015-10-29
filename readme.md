@@ -15,6 +15,8 @@ npm install create-object --save
 
 ## API Example
 
+###### Create
+
 ```js
 var create = require('create-object')
 
@@ -29,6 +31,19 @@ point
 
 point.valueOf()
 //=> [ -0.127758, 51.507351 ]
+```
+
+###### Create with properties
+
+```js
+var create = require('create-object')
+
+var geo = create({}, {
+  coordinates: [-0.127758, 51.507351]
+})
+
+geo
+//=> { coordinates: [ -0.127758, 51.507351 ] }
 ```
 
 ## Features
@@ -50,10 +65,11 @@ point.valueOf()
 ###### arguments
 
  - `prototype: (Object)` The object which should be the prototype of the newly-created object.
+ - `properties: (Object)` Key-values which should be copied to the newly-created object.
 
 ###### returns
 
- - `(Object)` New object with the specified prototype object.
+ - `(Object)` New object with the specified prototype object including any copied properties.
 
 ## Reference
 
